@@ -36,7 +36,7 @@ public class User {
         double rating = 0;
         int count = 0;
         for(Product p : basket.getProducts()) {
-            ++count;
+            count++;
             rating += p.getRating();
         }
         double averageRating = rating/count;
