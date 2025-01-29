@@ -2,9 +2,9 @@ package _23_01_25.homeWork;
 
 public class Card {
 
-    private String name;
+    String name;
 
-    private double balance;
+    double balance;
 
     public Card(String name, double balance) {
         this.name = name;
