@@ -48,7 +48,7 @@ public class Card {
         }
     }
 
-    public void withdraw(double amount){
+    public static void withdraw(double amount){
         if(balance - amount >= 0){
             balance -= amount;
         } else{
