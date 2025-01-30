@@ -9,9 +9,9 @@ public class Atm {
 
     public static double withdraw(Card card, double amount){
         if(card instanceof CreditCard){
-            CreditCard.withdraw(amount);
+            card.withdraw(amount);
         }else{
-            DebetCard.withdraw(amount);
+            card.withdraw(amount);
         }
         return card.balance;
     }

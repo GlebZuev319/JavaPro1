@@ -13,7 +13,7 @@ public class CreditCard extends Card{
     }
 
     @Override
-    public static void withdraw(double amount){
+    public void withdraw(double amount){
         balance -= amount;
         if(balance < 0){
             overdraft = Math.abs(balance);
@@ -24,13 +24,13 @@ public class CreditCard extends Card{
     public String toString() {
         if(balance >= 0){
             return "CreditCard{" +
-                    ", name='" + name + '\'' +
-                    ", balance=" + balance +
+                    "name = '" + name + '\'' +
+                    ", balance = " + balance +
                     '}';
         }else{
             return "CreditCard{" +
-                    ", name='" + name + '\'' +
-                    "overdraft=" + overdraft +
+                    "name = '" + name + '\'' +
+                    ", overdraft = " + overdraft +
                     '}';
         }
     }

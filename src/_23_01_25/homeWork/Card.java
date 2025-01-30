@@ -34,8 +34,8 @@ public class Card {
     @Override
     public String toString() {
         return "Card{" +
-                "name='" + name + '\'' +
-                ", balance=" + balance +
+                "name = '" + name + '\'' +
+                ", balance = " + balance +
                 " Dollars" +
                 '}';
     }
@@ -48,7 +48,7 @@ public class Card {
         }
     }
 
-    public static void withdraw(double amount){
+    public void withdraw(double amount){
         if(balance - amount >= 0){
             balance -= amount;
         } else{
